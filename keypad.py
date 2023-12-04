@@ -17,6 +17,8 @@ class KeyPad:
             row_pin.value(0)
             for j, col_pin in enumerate(self.col_pins):
                 if col_pin.value() == 0:
+                    while col_pin.value() == 0:
+                        pass
                     sleep(0.2) # Debounce
                     return self.keypad_mapping.get((i, j), None)
             row_pin.value(1)
