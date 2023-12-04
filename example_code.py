@@ -8,12 +8,10 @@ row_pins = [23, 32, 33, 19]
 col_pins = [18, 5, 4, 15]
 
 # Map the key positions to their corresponding value
-keypad_mapping = {
-    (0, 0): "1", (0, 1): "2", (0, 2): "3", (0, 3): "A",
-    (1, 0): "4", (1, 1): "5", (1, 2): "6", (1, 3): "B",
-    (2, 0): "7", (2, 1): "8", (2, 2): "9", (2, 3): "C",
-    (3, 0): "*", (3, 1): "0", (3, 2): "#", (3, 3): "D"
-}
+keypad_mapping = ["1","2","3","A",
+                  "4","5","6","B",
+                  "7","8","9","C",
+                  "*","0","#","D"]
 
 keys = KeyPad(row_pins, col_pins, keypad_mapping)
 
